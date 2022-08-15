@@ -1,0 +1,68 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body{
+    margin: 0;
+    font-family: consolas;
+}
+
+.main{
+    display: flex;
+}
+
+.menu{
+ background: rgb(189, 188, 188) ;
+ padding: 40px;
+ padding-top: 20px;
+padding-right: 80px;
+}
+
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container{
+    position: sticky;
+    top: 0;
+    padding-top:20px ;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.menu h1{
+    margin-bottom: 30px;
+}
+.menu li {
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+.contenido{
+    padding: 40px;
+    text-align: justify;
+}
+.menu button{
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    .menu{padding: 20px 40px;position: fixed;top: 0;left: 0;height: 100%;transition: 0.5s;}
+    .contenido{padding: 20px 40px;}
+    .container{position: static;}
+    .menu button{font-size: 20px;font-weight: bold;transform: translatex(187px);position: absolute;display: block;}
+}
+
+.menu-activo{
+    transform: translatex(0%);
+
+}
+
